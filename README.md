@@ -11,8 +11,15 @@ make
 ```
 
 ### Dependencies
-+ tClap
-+ HDF5 C++ bindings
+Main program compilation
++ [TCLAP](tclap.sourceforge.net) 1.2.1
++ HDF5 1.8.16
+
+Python input/output handling
++ matplotlib 2.1.2
++ h5py 2.7.1
++ click 6.7
++ numpy 1.14.0
 
 ## Usage
 Running the program takes two files, a system file detailing system parameters such as:
