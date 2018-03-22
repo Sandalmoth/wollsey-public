@@ -12,7 +12,7 @@ make
 
 ### Dependencies
 Main program compilation
-+ [TCLAP](https://tclap.sourceforge.net) 1.2.1
++ [TCLAP](http://tclap.sourceforge.net) 1.2.1
 + HDF5 1.8.16
 
 Python input/output handling
