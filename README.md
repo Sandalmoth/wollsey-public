@@ -10,6 +10,10 @@ cmake ..
 make
 ```
 
+### Dependencies
++ tClap
++ HDF5 C++ bindings
+
 ## Usage
 Running the program takes two files, a system file detailing system parameters such as:
 + Starting cell count and genotype
