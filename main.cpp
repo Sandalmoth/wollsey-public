@@ -21,7 +21,7 @@
 using namespace std;
 
 
-const string VERSION = "1.00";
+const string VERSION = "1.01";
 
 
 enum class Mode {
@@ -169,7 +169,7 @@ int main(int argc, char **argv) {
     }
 
   } catch (H5::Exception &e) {
-    e.printError();
+    e.printErrorStack();
     return 1;
   }
 
@@ -396,7 +396,7 @@ int main(int argc, char **argv) {
     }
 
   } catch (H5::Exception &e) {
-    e.printError();
+    e.printErrorStack();
     return 1;
   }
 
@@ -483,7 +483,7 @@ int main(int argc, char **argv) {
     X5::copy_attrs(ds_rpar, ds_opar);
 
   } catch (H5::Exception &e) {
-    e.printError();
+    e.printErrorStack();
     return 1;
   }
 
