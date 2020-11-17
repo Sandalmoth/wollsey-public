@@ -87,6 +87,7 @@ def gene(filename, residues):
     infogetter = re.compile(r'([A-Z])([0-9]+)([A-Z]+)')
     positions = []
     options = []
+    first = -999
     for r in residues:
         info = infogetter.search(r).groups()
         positions.append(int(info[1]))
@@ -94,6 +95,10 @@ def gene(filename, residues):
         toopt = list(info[2])
         toopt.sort()
         options.append([fromopt] + toopt)
+        if int(info[1]) <= first:
+            print("ERROR: Residues have to be in (numerical) order")
+            return
+        first = int(info[1])
     positions, options = zip(*sorted(zip(positions, options)))
     radix = [len(x) for x in options]
     make_rectangular(options, '')

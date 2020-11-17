@@ -31,6 +31,7 @@ RUNFN="example-run.hdf5"
 # add drug parameters
 # for brevity, lets look at only two mutants and two drugs
 # first, define the interesting mutants
+# the given residues have to be in numerical order
 # -r [mutation code on form A123BCDE] defines both the wildtype sequence (before number) and allowed SNVs (after number)
 ./nurse.py gene $SYSFN \
            -r G250E \
